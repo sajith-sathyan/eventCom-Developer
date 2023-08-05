@@ -35,11 +35,12 @@ mongoose
 
 app.use(
   cors({
-    origin: ["https://evnetcom.netlify.app],
-    methods: ["GET", "POST"], 
+    origin: ["http://localhost:3000", "https://eventcom.online"],
+    methods: ["GET", "POST"],
     credentials: true,
   })
 );
+
 
 app.use(cookieParser());
 
